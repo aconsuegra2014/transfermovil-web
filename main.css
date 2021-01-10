@@ -1,0 +1,152 @@
+.container {
+    max-width: 984px;
+    padding: 0 5px 0 5px;
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+	"m m m m m m m m m m m m"
+	"c c c c c c c c c c c c"
+	"p p p p p p p p p p p p"
+        "f f f f f f f f f f f f";
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container{
+	grid-template-areas:
+            "h h h h h h h h h h h h"
+	    "m m m m m m m m m m m m"
+	    "c c c c c c c c c c c c"
+	    "p p p p p p p p p p p p"
+	    "f f f f f f f f f f f f";
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container{
+	grid-template-areas:
+            "h h h h h h h h h h h h"
+	    "m m m m m m m m m m m m"
+	    "c c c c c c c c c c c c"
+	    "p p p p p p p p p p p p"
+	    "f f f f f f f f f f f f";
+    }
+
+}
+
+
+/* Large devices (desktops, 984px and up) */
+@media (min-width: 960px) {
+    .container{
+	grid-template-areas:
+            "h h h h h h h h h h h h"
+	    "m m m m m m m m m m m m"
+	    "c c c c c c c c c p p p"
+	    "f f f f f f f f f f f f";
+    }
+}
+
+
+
+.header {
+    grid-area: h;
+    border-radius: 7px 7px 0 0;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.menu ol{
+    padding: 10px 0 10px 0;
+    margin: 0;
+    background-color: #6a7a8a;
+}
+.menu ol li{
+    display: inline-flex;
+}
+
+.menu ol li a{
+    display: block;
+    color: white;
+    padding: 0 0 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #00000030;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+    border-radius: 0 0 7px 7px;
+}
+
+.publicity{
+    grid-area: p;
+}
+
+#copy-right{
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.header, .footer{
+    text-align: center;
+    background-color:  black;
+        text-shadow: 2px 1px 2px hsl(300, 4.2%, 46.3%);
+    color: white;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+code{
+    background-color: hsla(0, 1%, 71%, 0.43137254901960786);
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+
+p{
+    margin: 0 0 1em 0;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+
+
+
+a.btn-bpa {
+    padding: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: #0d8c0d;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.block-flex>li{
+  display: inline-flex;
+  padding: 5px;
+}
