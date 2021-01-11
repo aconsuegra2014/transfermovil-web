@@ -8,7 +8,7 @@ bpaCard.addEventListener('keyup', formatCard);
 function setCard(e) {
     let addCard = document.querySelector("a#bpa-add-card")
     let cardNumber = bpaCard.value
-    addCard.href=`tel:*444*49*01*${cardNumber}#`
+    addCard.href=`tel:*444*49*01*${cardNumber}#`.replace(/ /g, "");
 
 }
 
