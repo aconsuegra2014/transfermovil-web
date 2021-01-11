@@ -22,6 +22,10 @@
       </div>
       <div class="content">
 	<ul class="block-flex">
+	  <li data-controller="bpa">
+	    <input id="bpa-new-card" type="text" pattern="\d{4} \d{4} \d{4} \d{4}" maxlength="19" placeholder="Registrar tarjeta" />
+	    <a class="btn-bpa" id="bpa-add-card" href="#" data-bpa-target="registerAccount" >✅</a>
+	  </li>
 	  <li>
 	    <a class="btn-bpa" href="tel:*444*40*01#">Autenticarse</a>
 	  </li>
@@ -38,5 +42,6 @@
       <footer class="footer">
         <p id="copy-right">Copyright</p>
       </footer>
+      <script src="main.js"></script>
   </body>
 </html>
